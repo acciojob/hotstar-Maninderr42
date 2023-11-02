@@ -25,13 +25,11 @@ public class ProductionHouseService {
 
         productionHouse.setRatings(0.0);
 
-        List<WebSeries> series=new ArrayList<>();
 
-        productionHouse.setWebSeriesList(series);
 
-        productionHouseRepository.save(productionHouse);
+        ProductionHouse productionHouse1=productionHouseRepository.save(productionHouse);
 
-        return productionHouse.getId();
+        return productionHouse1.getId();
 
     }
 
